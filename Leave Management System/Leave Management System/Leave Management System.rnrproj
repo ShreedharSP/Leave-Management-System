@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>DAX</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{978de89c-d6fe-452f-a478-b05b3ce192ad}</ProjectGuid>
+    <Name>Leave Management System</Name>
+    <RootNamespace>Leave Management System</RootNamespace>
+    <StartupType>Form</StartupType>
+    <StartupObject>DAXMyfoem</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Action Menu Items\" />
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Dates\" />
+    <Folder Include="EDT Enums\" />
+    <Folder Include="EDT Extensions\" />
+    <Folder Include="EDT Integers\" />
+    <Folder Include="EDT Reals\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Menus\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\DAXLeaveAppTableContract">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveAppTableContract</Name>
+      <Link>Classes\DAXLeaveAppTableContract</Link>
+    </Content>
+    <Content Include="AxClass\DAXLeaveAppTableService">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveAppTableService</Name>
+      <Link>Classes\DAXLeaveAppTableService</Link>
+    </Content>
+    <Content Include="AxClass\DAXLeaveMAnagementController">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveMAnagementController</Name>
+      <Link>Classes\DAXLeaveMAnagementController</Link>
+    </Content>
+    <Content Include="AxClass\Salesorder_Extension">
+      <SubType>Content</SubType>
+      <Name>Salesorder_Extension</Name>
+      <Link>Classes\Salesorder_Extension</Link>
+    </Content>
+    <Content Include="AxEdtExtension\SalesId.DAX">
+      <SubType>Content</SubType>
+      <Name>SalesId.DAX</Name>
+      <Link>EDT Extensions\SalesId.DAX</Link>
+    </Content>
+    <Content Include="AxEdt\DAXApprovalDate">
+      <SubType>Content</SubType>
+      <Name>DAXApprovalDate</Name>
+      <Link>EDT Dates\DAXApprovalDate</Link>
+    </Content>
+    <Content Include="AxEdt\DAXApprovaldueDate">
+      <SubType>Content</SubType>
+      <Name>DAXApprovaldueDate</Name>
+      <Link>EDT Dates\DAXApprovaldueDate</Link>
+    </Content>
+    <Content Include="AxEdt\DAXApprover">
+      <SubType>Content</SubType>
+      <Name>DAXApprover</Name>
+      <Link>EDT Strings\DAXApprover</Link>
+    </Content>
+    <Content Include="AxEdt\DAXEmployeeID">
+      <SubType>Content</SubType>
+      <Name>DAXEmployeeID</Name>
+      <Link>EDT Strings\DAXEmployeeID</Link>
+    </Content>
+    <Content Include="AxEdt\DAXFromDate">
+      <SubType>Content</SubType>
+      <Name>DAXFromDate</Name>
+      <Link>EDT Dates\DAXFromDate</Link>
+    </Content>
+    <Content Include="AxEdt\DAXLeaveBalance">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveBalance</Name>
+      <Link>EDT Reals\DAXLeaveBalance</Link>
+    </Content>
+    <Content Include="AxEdt\DAxLeaveStatusID">
+      <SubType>Content</SubType>
+      <Name>DAxLeaveStatusID</Name>
+      <Link>EDT Integers\DAxLeaveStatusID</Link>
+    </Content>
+    <Content Include="AxEdt\DAXLeaveTypeID">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveTypeID</Name>
+      <Link>EDT Strings\DAXLeaveTypeID</Link>
+    </Content>
+    <Content Include="AxEdt\DAXName">
+      <SubType>Content</SubType>
+      <Name>DAXName</Name>
+      <Link>EDT Strings\DAXName</Link>
+    </Content>
+    <Content Include="AxEdt\DAXPendingForApproval">
+      <SubType>Content</SubType>
+      <Name>DAXPendingForApproval</Name>
+      <Link>EDT Reals\DAXPendingForApproval</Link>
+    </Content>
+    <Content Include="AxEdt\DAXRejectionComment">
+      <SubType>Content</SubType>
+      <Name>DAXRejectionComment</Name>
+      <Link>EDT Dates\DAXRejectionComment</Link>
+    </Content>
+    <Content Include="AxEdt\DAXToDate">
+      <SubType>Content</SubType>
+      <Name>DAXToDate</Name>
+      <Link>EDT Dates\DAXToDate</Link>
+    </Content>
+    <Content Include="AxEdt\DAXYear">
+      <SubType>Content</SubType>
+      <Name>DAXYear</Name>
+      <Link>EDT Integers\DAXYear</Link>
+    </Content>
+    <Content Include="AxEdt\LeaveID">
+      <SubType>Content</SubType>
+      <Name>LeaveID</Name>
+      <Link>EDT Enums\LeaveID</Link>
+    </Content>
+    <Content Include="AxEdt\StatusID">
+      <SubType>Content</SubType>
+      <Name>StatusID</Name>
+      <Link>EDT Enums\StatusID</Link>
+    </Content>
+    <Content Include="AxEnum\DAXLeaveStatus">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveStatus</Name>
+      <Link>Base Enums\DAXLeaveStatus</Link>
+    </Content>
+    <Content Include="AxEnum\DAXLevelType">
+      <SubType>Content</SubType>
+      <Name>DAXLevelType</Name>
+      <Link>Base Enums\DAXLevelType</Link>
+    </Content>
+    <Content Include="AxFormExtension\SalesTable.DAX">
+      <SubType>Content</SubType>
+      <Name>SalesTable.DAX</Name>
+      <Link>Form Extensions\SalesTable.DAX</Link>
+    </Content>
+    <Content Include="AxForm\DAXEmplDetails">
+      <SubType>Content</SubType>
+      <Name>DAXEmplDetails</Name>
+      <Link>Forms\DAXEmplDetails</Link>
+    </Content>
+    <Content Include="AxForm\DAXLeaveAppDetails">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveAppDetails</Name>
+      <Link>Forms\DAXLeaveAppDetails</Link>
+    </Content>
+    <Content Include="AxForm\DAXLeaveBalDetails">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveBalDetails</Name>
+      <Link>Forms\DAXLeaveBalDetails</Link>
+    </Content>
+    <Content Include="AxForm\DAXMyfoem">
+      <SubType>Content</SubType>
+      <Name>DAXMyfoem</Name>
+      <Link>Forms\DAXMyfoem</Link>
+    </Content>
+    <Content Include="AxLabelFile\dbLMSLableFile_en-US">
+      <SubType>Content</SubType>
+      <Name>dbLMSLableFile_en-US</Name>
+      <Link>Label Files\dbLMSLableFile_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.DAX">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.DAX</Name>
+      <Link>Menu Extensions\AccountsReceivable.DAX</Link>
+    </Content>
+    <Content Include="AxMenuExtension\MainMenu.DAX">
+      <SubType>Content</SubType>
+      <Name>MainMenu.DAX</Name>
+      <Link>Menu Extensions\MainMenu.DAX</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\DAXLeaveManagementServive">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveManagementServive</Name>
+      <Link>Action Menu Items\DAXLeaveManagementServive</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DAXDisplayQueryEmployeeDetails">
+      <SubType>Content</SubType>
+      <Name>DAXDisplayQueryEmployeeDetails</Name>
+      <Link>Display Menu Items\DAXDisplayQueryEmployeeDetails</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DAXEmplDetails">
+      <SubType>Content</SubType>
+      <Name>DAXEmplDetails</Name>
+      <Link>Display Menu Items\DAXEmplDetails</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DAXLeaveAppDetails">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveAppDetails</Name>
+      <Link>Display Menu Items\DAXLeaveAppDetails</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\DAXLeaveBalDetails">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveBalDetails</Name>
+      <Link>Display Menu Items\DAXLeaveBalDetails</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\DAXEmployeeOutput">
+      <SubType>Content</SubType>
+      <Name>DAXEmployeeOutput</Name>
+      <Link>Output Menu Items\DAXEmployeeOutput</Link>
+    </Content>
+    <Content Include="AxMenu\DAXLeaveManagementMenu">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveManagementMenu</Name>
+      <Link>Menus\DAXLeaveManagementMenu</Link>
+    </Content>
+    <Content Include="AxQuery\DAXEmployeeStaticQueryReport">
+      <SubType>Content</SubType>
+      <Name>DAXEmployeeStaticQueryReport</Name>
+      <Link>Simple Queries\DAXEmployeeStaticQueryReport</Link>
+    </Content>
+    <Content Include="AxQuery\EmployeeQuery">
+      <SubType>Content</SubType>
+      <Name>EmployeeQuery</Name>
+      <Link>Simple Queries\EmployeeQuery</Link>
+    </Content>
+    <Content Include="AxReport\DAXEmployeeReport">
+      <SubType>Content</SubType>
+      <Name>DAXEmployeeReport</Name>
+      <Link>Reports\DAXEmployeeReport</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesTable.DAX">
+      <SubType>Content</SubType>
+      <Name>SalesTable.DAX</Name>
+      <Link>Table Extensions\SalesTable.DAX</Link>
+    </Content>
+    <Content Include="AxTable\DAXEmplTable">
+      <SubType>Content</SubType>
+      <Name>DAXEmplTable</Name>
+      <Link>Tables\DAXEmplTable</Link>
+    </Content>
+    <Content Include="AxTable\DAXLeaveAppTable">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveAppTable</Name>
+      <Link>Tables\DAXLeaveAppTable</Link>
+    </Content>
+    <Content Include="AxTable\DAXLeaveBalTable">
+      <SubType>Content</SubType>
+      <Name>DAXLeaveBalTable</Name>
+      <Link>Tables\DAXLeaveBalTable</Link>
+    </Content>
+    <Content Include="dbLMSLableFile.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>dbLMSLableFile.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\dbLMSLableFile_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
